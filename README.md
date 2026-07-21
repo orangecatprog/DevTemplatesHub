@@ -1,15 +1,5 @@
-# devtemplates-hub
+# DevTemplates Hub
 
-To install dependencies:
+A collection of modern, production-ready project templates built for TypeScript developers.
 
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
-
-This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+DevTemplates Hub provides reusable templates with a consistent architecture, tooling, and development workflow, allowing you to start new projects in seconds instead of spending time configuring the same tools repeatedly.
