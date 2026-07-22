@@ -22,6 +22,8 @@
         "@eslint/markdown": "^8.0.3",
         "@types/bun": "latest",
         "@vitest/coverage-v8": "^4.1.10",
+        "commitizen": "^4.3.2",
+        "cz-git": "^1.13.1",
         "eslint": "^10.7.0",
         "eslint-config-prettier": "^10.1.8",
         "globals": "^17.7.0",
@@ -41,5 +43,20 @@
         "*.{ts,tsx,js,mjs,cjs}": [
             "eslint --fix"
         ]
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-git"
+        },
+        "cz-git": {
+            "alias": {
+                "fd": "docs: fix typos"
+            },
+            "maxSubjectLength": 72,
+            "allowBreakingChanges": [
+                "feat",
+                "fix"
+            ]
+        }
     }
 }
