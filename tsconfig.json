@@ -1,19 +1,37 @@
 {
     "compilerOptions": {
-        "module": "nodenext",
-        "target": "esnext",
-        "types": ["vitest/globals"],
-        "sourceMap": true,
-        "declaration": true,
-        "declarationMap": true,
+        "target": "ESNext",
+        "lib": ["ESNext"],
+
+        "module": "Preserve",
+        "moduleResolution": "bundler",
+        "paths": {
+            "@/*": ["./src/*"],
+            "@shared/*": ["./src/Shared/*"],
+            "@auth/*": ["./src/Auth/*"]
+        },
+
+        "noEmit": true,
+
+        "strict": true,
         "noUncheckedIndexedAccess": true,
         "exactOptionalPropertyTypes": true,
-        "strict": true,
-        "jsx": "react-jsx",
-        "verbatimModuleSyntax": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "useUnknownInCatchVariables": true,
+
         "isolatedModules": true,
-        "noUncheckedSideEffectImports": true,
-        "moduleDetection": "force",
-        "skipLibCheck": true
-    }
+        "verbatimModuleSyntax": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": false,
+
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "exclude": ["dist", "coverage", "node_modules"]
 }
